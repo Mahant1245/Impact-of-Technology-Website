@@ -1,0 +1,36 @@
+.grid {
+  display: grid;
+  grid-template-columns: 200px auto;
+  grid-template-rows: 100px minmax(160px, auto) auto;
+  grid-template-areas: 
+    'header header'
+    'leftbar main';
+  column-gap: 3px;
+  row-gap: 3px;
+}
+
+.page-header {
+  grid-area: header;
+}
+
+.page-leftbar {
+  grid-area: leftbar;
+}
+
+.page-main {
+  grid-area: main;
+}
+.logo-img{
+	float: left;
+}
+
+
+.content {
+  color: #242424;
+  background-color: #51e2f5;
+  font-weight: 600;
+  text-align: center;
+  box-sizing: border-box;
+  height: 100%;
+  padding: 10px;
+}

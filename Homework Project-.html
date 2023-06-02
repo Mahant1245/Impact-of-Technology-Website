@@ -1,0 +1,120 @@
+<HTML>
+<head>
+<link href="style.css" rel="stylesheet" type="text/css">
+<title> Half term project</title>
+
+<style>
+ul {
+float: left;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  width: 180px;
+  background-color: #2d545e;
+  border: 1px solid #555;
+  
+}
+
+li a {
+  display: block;
+  color: white;
+  padding: 16px 5px;
+  text-decoration: none;
+}
+
+li {
+  text-align: center;
+  border-bottom: 1px solid #555;
+}
+
+li:last-child {
+  border-bottom: none;
+}
+
+li a.active {
+  background-color: #04AA6D;
+  color: white;
+}
+
+li a:hover:not(.active) {
+  background-color: #F7C331;
+  color: #ff3a22;
+}
+</style>
+
+</head>
+<body>
+
+<div class="grid">
+  <header class="page-header">
+  <div class="logo-img">
+	<img src="logo.jpg",width="300" height="100" alt="logo">
+  </div>
+    <div class="content">
+    <p><h1>Web Technologies Task</h1></p>
+    </div>
+  </header>
+  <aside class="page-leftbar">
+    <div class="content">
+      <p><h1>Navigation Bar</h1></p>
+	  <ul>
+		  <li><a href="Homework Project-.HTML">About us</a></li>
+		  <li><a href="Computers in the Workforce.HTML">Computers in the workforce</a></li>
+		  <li><a href="Automated Decision Making.HTML">Automated Decision Making</a></li>
+		  <li><a href="Artificial Intelligence.HTML">Artificial Intelligence</a></li>
+		  <li><a href="Environmental Effects.HTML">Environmental Effects</a></li>
+		  <li><a href="Ethical issues.HTML">Ethical issues</a></li>
+		</ul>
+    </div>
+  </aside>
+  <main class="page-main">
+    <div class="content">
+      <p><h1>Introduction</h1></p>
+	   
+	  <p>Hello and welcome to the Green Defender's webpage. We are recognised environmentalist group mainly based in United Kingdom and spread all throughout Europe.</p>
+	  <p>In this webpage you will find some crucial information aboutethical issues arising from the use of computers now and in the future.</p>
+	  <img src="ethics poster.jpg", alt="ethics poster">
+	  <p>Please use navigation bar to switch between different pages.</p>
+	  <p><h3>Inquiry</h3></p>
+	  <p>if you have any inquiry, then please enter your name, email address and inquiry and press the send button.</p>
+	  
+	  <form name="feedback">
+<p id="box">Enter Your Name</p> 
+<input type="text" name="answer"><br>
+<p id="box2">Enter your email address</p> 
+<input type="text" name="answer1"><br>
+<p id="box3">Enter your inquiry</p> 
+<input type="text" name="answer2"><br>
+<button type="button" onclick="validate()">Send inquiry</button>
+</form>
+
+<script>
+function validate() {
+    var x = document.forms["feedback"]["answer"].value;
+	var y = document.forms["feedback"]["answer1"].value;
+	var z = document.forms["feedback"]["answer2"].value;
+    if (x == "") {
+        alert("please enter your name"); 
+	}
+	else if (y == "") {
+        alert("please enter your email"); 
+	}
+	else if (z==""){
+		alert("please enter your inquiry");
+	}
+	else {
+		document.forms["feedback"]["answer"].value="";
+		document.forms["feedback"]["answer1"].value="";
+		document.forms["feedback"]["answer2"].value="";
+	}
+}
+
+</script>  
+    </div>
+  </main>
+  
+</div>
+
+</body>
+
+</HTML>
